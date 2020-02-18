@@ -1,0 +1,334 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+
+  <appSettings>
+    <add key="aspnet:UseTaskFriendlySynchronizationContext" value="true" />
+  </appSettings>
+
+  <connectionStrings>
+    <add name="myDatabaseConnection" connectionString="SERVER=localhost; DATABASE=gids_pyme;UID=root;PASSWORD=;Treat Tiny As Boolean=false;" />
+  </connectionStrings>
+
+  <system.web>
+    <compilation debug="true" />
+  </system.web>
+
+  <!-- SERVICIOS -->
+  <system.serviceModel>
+    <services>
+      <service name="WCF.SisUsuariosService">
+        <endpoint address="" binding="basicHttpBinding" contract="WCF.ISisUsuarios">
+          <identity>
+            <dns value="localhost" />
+          </identity>
+        </endpoint>
+        <endpoint address="mex" binding="mexHttpBinding" contract="IMetadataExchange" />
+        <host>
+          <baseAddresses>
+            <add baseAddress="http://localhost:8733/Design_Time_Addresses/WCF/SisUsuariosService/" />
+          </baseAddresses>
+        </host>
+      </service>
+      <service name="WCF.SisEmpresaService">
+        <endpoint address="" binding="basicHttpBinding" contract="WCF.ISisEmpresa">
+          <identity>
+            <dns value="localhost" />
+          </identity>
+        </endpoint>
+        <endpoint address="mex" binding="mexHttpBinding" contract="IMetadataExchange" />
+        <host>
+          <baseAddresses>
+            <add baseAddress="http://localhost:8733/Design_Time_Addresses/WCF/SisEmpresaService/" />
+          </baseAddresses>
+        </host>
+      </service>
+      <service name="WCF.CnfCotizacionService">
+        <endpoint address="" binding="basicHttpBinding" contract="WCF.ICnfCotizacion">
+          <identity>
+            <dns value="localhost" />
+          </identity>
+        </endpoint>
+        <endpoint address="mex" binding="mexHttpBinding" contract="IMetadataExchange" />
+        <host>
+          <baseAddresses>
+            <add baseAddress="http://localhost:8733/Design_Time_Addresses/WCF/CnfCotizacionService/" />
+          </baseAddresses>
+        </host>
+      </service>
+      <service name="WCF.InvCategoriaService">
+        <endpoint address="" binding="basicHttpBinding" contract="WCF.IInvCategoria">
+          <identity>
+            <dns value="localhost" />
+          </identity>
+        </endpoint>
+        <endpoint address="mex" binding="mexHttpBinding" contract="IMetadataExchange" />
+        <host>
+          <baseAddresses>
+            <add baseAddress="http://localhost:8733/Design_Time_Addresses/WCF/InvCategoriaService/" />
+          </baseAddresses>
+        </host>
+      </service>
+      <service name="WCF.SisListasService">
+        <endpoint address="" binding="basicHttpBinding" contract="WCF.ISisListas">
+          <identity>
+            <dns value="localhost" />
+          </identity>
+        </endpoint>
+        <endpoint address="mex" binding="mexHttpBinding" contract="IMetadataExchange" />
+        <host>
+          <baseAddresses>
+            <add baseAddress="http://localhost:8733/Design_Time_Addresses/WCF/SisListasService/" />
+          </baseAddresses>
+        </host>
+      </service>
+      <service name="WCF.SisImpuestoService">
+        <endpoint address="" binding="basicHttpBinding" contract="WCF.ISisImpuesto">
+          <identity>
+            <dns value="localhost" />
+          </identity>
+        </endpoint>
+        <endpoint address="mex" binding="mexHttpBinding" contract="IMetadataExchange" />
+        <host>
+          <baseAddresses>
+            <add baseAddress="http://localhost:8733/Design_Time_Addresses/WCF/SisImpuestoService/" />
+          </baseAddresses>
+        </host>
+      </service>
+      <service name="WCF.InvProductoService">
+        <endpoint address="" binding="basicHttpBinding" contract="WCF.IInvProducto">
+          <identity>
+            <dns value="localhost" />
+          </identity>
+        </endpoint>
+        <endpoint address="mex" binding="mexHttpBinding" contract="IMetadataExchange" />
+        <host>
+          <baseAddresses>
+            <add baseAddress="http://localhost:8733/Design_Time_Addresses/WCF/InvPrroductoService/" />
+          </baseAddresses>
+        </host>
+      </service>
+      <service name="WCF.CmpProveedorService">
+        <endpoint address="" binding="basicHttpBinding" contract="WCF.ICmpProveedor">
+          <identity>
+            <dns value="localhost" />
+          </identity>
+        </endpoint>
+        <endpoint address="mex" binding="mexHttpBinding" contract="IMetadataExchange" />
+        <host>
+          <baseAddresses>
+            <add baseAddress="http://localhost:8733/Design_Time_Addresses/WCF/CmpProveedorService/" />
+          </baseAddresses>
+        </host>
+      </service>
+      <service name="WCF.CmpOperacionService">
+        <endpoint address="" binding="basicHttpBinding" contract="WCF.ICmpOperacion">
+          <identity>
+            <dns value="localhost" />
+          </identity>
+        </endpoint>
+        <endpoint address="mex" binding="mexHttpBinding" contract="IMetadataExchange" />
+        <host>
+          <baseAddresses>
+            <add baseAddress="http://localhost:8733/Design_Time_Addresses/WCF/CmpOperacionService/" />
+          </baseAddresses>
+        </host>
+      </service>
+      <service name="WCF.SisOperacionService">
+        <endpoint address="" binding="basicHttpBinding" contract="WCF.ISisOperacion">
+          <identity>
+            <dns value="localhost" />
+          </identity>
+        </endpoint>
+        <endpoint address="mex" binding="mexHttpBinding" contract="IMetadataExchange" />
+        <host>
+          <baseAddresses>
+            <add baseAddress="http://localhost:8733/Design_Time_Addresses/WCF/SisOperacionService/" />
+          </baseAddresses>
+        </host>
+      </service>
+      <service name="WCF.InvMovimientoService">
+        <endpoint address="" binding="basicHttpBinding" contract="WCF.IInvMovimiento">
+          <identity>
+            <dns value="localhost" />
+          </identity>
+        </endpoint>
+        <endpoint address="mex" binding="mexHttpBinding" contract="IMetadataExchange" />
+        <host>
+          <baseAddresses>
+            <add baseAddress="http://localhost:8733/Design_Time_Addresses/WCF/InvMovimientoService/" />
+          </baseAddresses>
+        </host>
+      </service>
+      <service name="WCF.CnfMonedaService">
+        <endpoint address="" binding="basicHttpBinding" contract="WCF.ICnfMoneda">
+          <identity>
+            <dns value="localhost" />
+          </identity>
+        </endpoint>
+        <endpoint address="mex" binding="mexHttpBinding" contract="IMetadataExchange" />
+        <host>
+          <baseAddresses>
+            <add baseAddress="http://localhost:8733/Design_Time_Addresses/WCF/Service1/" />
+          </baseAddresses>
+        </host>
+      </service>
+      <service name="WCF.Services.VntClienteService">
+        <endpoint address="" binding="basicHttpBinding" contract="WCF.Services.IVntCliente">
+          <identity>
+            <dns value="localhost" />
+          </identity>
+        </endpoint>
+        <endpoint address="mex" binding="mexHttpBinding" contract="IMetadataExchange" />
+        <host>
+          <baseAddresses>
+            <add baseAddress="http://localhost:8733/Design_Time_Addresses/WCF.Services/VntClienteService/" />
+          </baseAddresses>
+        </host>
+      </service>
+      <service name="WCF.Services.VntOperacionService">
+        <endpoint address="" binding="basicHttpBinding" contract="WCF.Services.IVntOperacion">
+          <identity>
+            <dns value="localhost" />
+          </identity>
+        </endpoint>
+        <endpoint address="mex" binding="mexHttpBinding" contract="IMetadataExchange" />
+        <host>
+          <baseAddresses>
+            <add baseAddress="http://localhost:8733/Design_Time_Addresses/WCF.Services/VntOperacionService/" />
+          </baseAddresses>
+        </host>
+      </service>
+      <service name="WCF.Services.CnfCuentaBancariaService">
+        <endpoint address="" binding="basicHttpBinding" contract="WCF.Services.ICnfCuentaBancaria">
+          <identity>
+            <dns value="localhost" />
+          </identity>
+        </endpoint>
+        <endpoint address="mex" binding="mexHttpBinding" contract="IMetadataExchange" />
+        <host>
+          <baseAddresses>
+            <add baseAddress="http://localhost:8733/Design_Time_Addresses/WCF.Services/CnfCuentasBancariasService/" />
+          </baseAddresses>
+        </host>
+      </service>
+      <service name="WCF.Services.CajMovimientoService">
+        <endpoint address="" binding="basicHttpBinding" contract="WCF.Services.ICajMovimiento">
+          <identity>
+            <dns value="localhost" />
+          </identity>
+        </endpoint>
+        <endpoint address="mex" binding="mexHttpBinding" contract="IMetadataExchange" />
+        <host>
+          <baseAddresses>
+            <add baseAddress="http://localhost:8733/Design_Time_Addresses/WCF.Services/CajMovimientoService/" />
+          </baseAddresses>
+        </host>
+      </service>
+      <service name="WCF.Services.CajOperacionService">
+        <endpoint address="" binding="basicHttpBinding" contract="WCF.Services.ICajOperacion">
+          <identity>
+            <dns value="localhost" />
+          </identity>
+        </endpoint>
+        <endpoint address="mex" binding="mexHttpBinding" contract="IMetadataExchange" />
+        <host>
+          <baseAddresses>
+            <add baseAddress="http://localhost:8733/Design_Time_Addresses/WCF.Services/CajOperacionService/" />
+          </baseAddresses>
+        </host>
+      </service>
+      <service name="WCF.Services.InvOperacionService">
+        <endpoint address="" binding="basicHttpBinding" contract="WCF.Services.IInvOperacion">
+          <identity>
+            <dns value="localhost" />
+          </identity>
+        </endpoint>
+        <endpoint address="mex" binding="mexHttpBinding" contract="IMetadataExchange" />
+        <host>
+          <baseAddresses>
+            <add baseAddress="http://localhost:8733/Design_Time_Addresses/WCF.Services/InvOperacionService/" />
+          </baseAddresses>
+        </host>
+      </service>
+      <service name="WCF.Services.RepInventarioService">
+        <endpoint address="" binding="basicHttpBinding" contract="WCF.Services.IRepInventario">
+          <identity>
+            <dns value="localhost" />
+          </identity>
+        </endpoint>
+        <endpoint address="mex" binding="mexHttpBinding" contract="IMetadataExchange" />
+        <host>
+          <baseAddresses>
+            <add baseAddress="http://localhost:8733/Design_Time_Addresses/WCF.Services/RepInventarioService/" />
+          </baseAddresses>
+        </host>
+      </service>
+      <service name="WCF.Services.RepCompraService">
+        <endpoint address="" binding="basicHttpBinding" contract="WCF.Services.IRepCompra">
+          <identity>
+            <dns value="localhost" />
+          </identity>
+        </endpoint>
+        <endpoint address="mex" binding="mexHttpBinding" contract="IMetadataExchange" />
+        <host>
+          <baseAddresses>
+            <add baseAddress="http://localhost:8733/Design_Time_Addresses/WCF.Services/RepCompraService/" />
+          </baseAddresses>
+        </host>
+      </service>
+      <service name="WCF.Services.RepVentaService">
+        <endpoint address="" binding="basicHttpBinding" contract="WCF.Services.IRepVenta">
+          <identity>
+            <dns value="localhost" />
+          </identity>
+        </endpoint>
+        <endpoint address="mex" binding="mexHttpBinding" contract="IMetadataExchange" />
+        <host>
+          <baseAddresses>
+            <add baseAddress="http://localhost:8733/Design_Time_Addresses/WCF.Services/RepVentaService/" />
+          </baseAddresses>
+        </host>
+      </service>
+      <service name="WCF.Services.RepCajaService">
+        <endpoint address="" binding="basicHttpBinding" contract="WCF.Services.IRepCaja">
+          <identity>
+            <dns value="localhost" />
+          </identity>
+        </endpoint>
+        <endpoint address="mex" binding="mexHttpBinding" contract="IMetadataExchange" />
+        <host>
+          <baseAddresses>
+            <add baseAddress="http://localhost:8733/Design_Time_Addresses/WCF.Services/RepCajaService/" />
+          </baseAddresses>
+        </host>
+      </service>
+      <service name="WCF.Services.RepDashboardService">
+        <endpoint address="" binding="basicHttpBinding" contract="WCF.Services.IRepDashboard">
+          <identity>
+            <dns value="localhost" />
+          </identity>
+        </endpoint>
+        <endpoint address="mex" binding="mexHttpBinding" contract="IMetadataExchange" />
+        <host>
+          <baseAddresses>
+            <add baseAddress="http://localhost:8733/Design_Time_Addresses/WCF.Services/RepDashboardService/" />
+          </baseAddresses>
+        </host>
+      </service>
+    </services>
+    <behaviors>
+      <serviceBehaviors>
+        <behavior>
+          <!-- Para evitar revelar información de los metadatos, 
+          establezca los valores siguientes en false antes de la implementación -->
+          <serviceMetadata httpGetEnabled="True" httpsGetEnabled="True"/>
+          <!-- Para recibir detalles de las excepciones en los fallos, con el fin de poder realizar la depuración, 
+          establezca el valor siguiente en true. Para no revelar información sobre las excepciones 
+          establézcalo en false antes de la implementación -->
+          <serviceDebug includeExceptionDetailInFaults="False" />
+        </behavior>
+      </serviceBehaviors>
+    </behaviors>
+  </system.serviceModel>
+
+</configuration>

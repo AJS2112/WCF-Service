@@ -1,0 +1,16 @@
+E:\Documents\Visual Studio 2015\Projects\InvAra\WCFService\WcfAra\bin\Debug\WcfAra.exe.config
+E:\Documents\Visual Studio 2015\Projects\InvAra\WCFService\WcfAra\bin\Debug\WcfAra.exe
+E:\Documents\Visual Studio 2015\Projects\InvAra\WCFService\WcfAra\bin\Debug\WcfAra.pdb
+E:\Documents\Visual Studio 2015\Projects\InvAra\WCFService\WcfAra\bin\Debug\WCF.dll
+E:\Documents\Visual Studio 2015\Projects\InvAra\WCFService\WcfAra\bin\Debug\DAL.dll
+E:\Documents\Visual Studio 2015\Projects\InvAra\WCFService\WcfAra\bin\Debug\Newtonsoft.Json.dll
+E:\Documents\Visual Studio 2015\Projects\InvAra\WCFService\WcfAra\bin\Debug\MySql.Data.dll
+E:\Documents\Visual Studio 2015\Projects\InvAra\WCFService\WcfAra\bin\Debug\WCF.pdb
+E:\Documents\Visual Studio 2015\Projects\InvAra\WCFService\WcfAra\bin\Debug\DAL.pdb
+E:\Documents\Visual Studio 2015\Projects\InvAra\WCFService\WcfAra\bin\Debug\Newtonsoft.Json.pdb
+E:\Documents\Visual Studio 2015\Projects\InvAra\WCFService\WcfAra\bin\Debug\Newtonsoft.Json.xml
+E:\Documents\Visual Studio 2015\Projects\InvAra\WCFService\WcfAra\obj\Debug\WcfAra.csprojResolveAssemblyReference.cache
+E:\Documents\Visual Studio 2015\Projects\InvAra\WCFService\WcfAra\obj\Debug\WcfAra.ProjectInstaller.resources
+E:\Documents\Visual Studio 2015\Projects\InvAra\WCFService\WcfAra\obj\Debug\WcfAra.csproj.GenerateResource.Cache
+E:\Documents\Visual Studio 2015\Projects\InvAra\WCFService\WcfAra\obj\Debug\WcfAra.exe
+E:\Documents\Visual Studio 2015\Projects\InvAra\WCFService\WcfAra\obj\Debug\WcfAra.pdb
